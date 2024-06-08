@@ -1,0 +1,157 @@
+
+/*general*/
+body{
+    background-image: url(Multimedia/fondo.jpg);
+    background-size: contain;
+    background-position: center;
+}
+/*textos*/
+p{
+    color: #3a5266
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+li{
+    color: #3a5266
+}
+/*titulos*/
+h2{
+    color: blanchedalmond;
+    background-color: #96c8a2;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h3{
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    color: antiquewhite;
+    font-size: 50px;
+}
+h4{
+    color: white;
+    background-color: #5f9ea0;
+    text-align: center;
+    margin-top: 70px;
+}
+.info{
+    display: block;
+}
+a nav{
+    text-decoration: none;
+    color: white;
+}
+/*video*/
+video{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*header*/
+header{
+    background-color: #96c8a2;
+    height: 80px;
+    position: sticky;
+    top: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    display: flex;
+    height: 80px; 
+    border: 1px solid black;   
+    cursor: pointer;
+}
+h1{
+    display: inline;
+    align-self: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+/*nav*/
+nav{
+    display: inline;
+    align-self: center;
+}
+
+/*cursos*/
+.todos-los-cursos{
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+.cursos{
+    width: 24%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    transition: transform 0.5s
+}
+.cursos:hover{
+    transform: scale(1.1);
+}
+/*redes*/
+ul{
+    list-style-type: none;
+    color: antiquewhite;
+}
+a{
+    color:#3a5266;
+    text-decoration: none;
+    transition: 1s;
+}
+a:hover{
+    color: green;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+a:visited{
+    color: purple;
+}
+/*mapa*/
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/*wsp*/
+#wsp{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 100px;
+    transition: transform 0.5s
+}
+#wsp:hover{
+    transform: scale(1.1);
+}
+/*footer*/
+footer{
+    background-color: #5f9ea0;
+}
+/*formulario*/
+form label{
+    margin: 20px 20px;
+}
+form select{
+    margin: 10px 20px;
+}
+form input{
+    border: 0px;
+    padding: 9px;
+}
+form input:focus{
+    background-color:  #bdecb6;  
+
+}
+form select:focus{
+    background-color: #bdecb6;
+}
