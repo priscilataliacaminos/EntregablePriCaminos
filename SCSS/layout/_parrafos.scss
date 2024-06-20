@@ -1,0 +1,51 @@
+/*textos*/
+p{
+    color: #3a5266;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+} 
+
+/*redes*/
+ul{
+    list-style-type: none;
+    color: antiquewhite;
+        li{
+             margin: 5px;
+             color: #3a5266;
+             a{
+                color:#3a5266;
+                text-decoration: none;
+                transition: 1s;
+                &:hover{
+                    color: green;
+                    background-color: antiquewhite;
+                    margin: 10px;
+                }
+                &:visited{
+                    color: purple;
+                 }   
+            }
+            
+        }         
+}
+li{
+    margin: 5px;
+    color: #3a5266;
+    a{
+       color:#3a5266;
+       text-decoration: none;
+       transition: 1s;
+       &:hover{
+           color: green;
+           background-color: antiquewhite;
+           margin: 10px;
+       }
+       &:visited{
+           color: purple;
+        }   
+   }
+}
+

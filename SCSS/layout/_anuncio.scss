@@ -1,0 +1,23 @@
+@keyframes aparecer{
+0% {
+    opacity: 0%;
+}
+100% {
+    opacity: 100%;
+}
+}
+
+.anuncio{
+    background-color: #ffed00;
+    p{
+        padding: 20px;
+        font-family: arial;
+        text-align: center;
+    }
+    &:hover{
+        animation-name: aparecer;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+}  
+

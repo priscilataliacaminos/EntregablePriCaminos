@@ -1,0 +1,12 @@
+.card{
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 10px;
+    float: left;
+    width: 50%;
+    height: 80px;
+    .card-title{
+        color: green;
+    }
+}

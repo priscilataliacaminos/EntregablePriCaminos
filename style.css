@@ -1,157 +1,200 @@
+body {
+  background-image: url(../Multimedia/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
-/*general*/
-body{
-    background-image: url(Multimedia/fondo.jpg);
-    background-size: contain;
-    background-position: center;
+/*videos*/
+video {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-/*textos*/
-p{
-    color: #3a5266
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
+
+header {
+  background-color: #96c8a2;
+  height: 80px;
+  display: flex;
+  position: sticky;
+  top: 1px;
+  justify-content: space-between;
+  z-index: 2;
+  align-items: center;
 }
-li{
-    color: #3a5266
+header #logo {
+  display: flex;
+  height: 80px;
+  border: 1px solid black;
+  cursor: pointer;
 }
-/*titulos*/
-h2{
-    color: blanchedalmond;
-    background-color: #96c8a2;
-    text-align: center;
-    position: absolute;
-    top: 80px;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+header h1 {
+  text-align: center;
+  display: inline;
+  align-self: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
 }
-h3{
-    text-align: center;
-    position: absolute;
-    top: 200px;
-    color: antiquewhite;
-    font-size: 50px;
+header nav {
+  display: inline;
+  align-self: center;
 }
-h4{
-    color: white;
-    background-color: #5f9ea0;
-    text-align: center;
-    margin-top: 70px;
+header nav a {
+  text-decoration: none;
+  color: white;
 }
-.info{
-    display: block;
+header nav a:hover {
+  color: green;
+  background-color: antiquewhite;
+  margin: 0.5em;
 }
-a nav{
-    text-decoration: none;
-    color: white;
+header nav a:visited {
+  color: purple;
 }
-/*video*/
-video{
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+@keyframes aparecer {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
-/*header*/
-header{
-    background-color: #96c8a2;
-    height: 80px;
-    position: sticky;
-    top: 1px;
-    display: flex;
-    justify-content: space-between;
+.anuncio {
+  background-color: #ffed00;
 }
-#logo{
-    display: flex;
-    height: 80px; 
-    border: 1px solid black;   
-    cursor: pointer;
+.anuncio p {
+  padding: 20px;
+  font-family: arial;
+  text-align: center;
 }
-h1{
-    display: inline;
-    align-self: center;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    cursor: pointer;
+.anuncio:hover {
+  animation-name: aparecer;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
 }
-/*nav*/
-nav{
-    display: inline;
-    align-self: center;
+
+/*redes, mapa*/
+h5 {
+  background-color: #5f9ea0;
 }
 
 /*cursos*/
-.todos-los-cursos{
-    margin-top: 50px;
-    margin-bottom: 50px; 
+h4 {
+  color: black;
+  background-color: #5f9ea0;
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  font-size: 10px;
 }
-.cursos{
-    width: 24%;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    transition: transform 0.5s
-}
-.cursos:hover{
-    transform: scale(1.1);
-}
-/*redes*/
-ul{
-    list-style-type: none;
-    color: antiquewhite;
-}
-a{
-    color:#3a5266;
-    text-decoration: none;
-    transition: 1s;
-}
-a:hover{
-    color: green;
-    background-color: antiquewhite;
-    margin: 10px;
-}
-a:visited{
-    color: purple;
-}
-/*mapa*/
-.mapa{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-/*wsp*/
-#wsp{
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    width: 100px;
-    transition: transform 0.5s
-}
-#wsp:hover{
-    transform: scale(1.1);
-}
-/*footer*/
-footer{
-    background-color: #5f9ea0;
-}
-/*formulario*/
-form label{
-    margin: 20px 20px;
-}
-form select{
-    margin: 10px 20px;
-}
-form input{
-    border: 0px;
-    padding: 9px;
-}
-form input:focus{
-    background-color:  #bdecb6;  
 
+/*portada*/
+h2 {
+  color: blanchedalmond;
+  background-color: #96c8a2;
+  text-align: center;
+  position: absolute;
+  top: 2em;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-form select:focus{
-    background-color: #bdecb6;
+
+h3 {
+  text-align: center;
+  color: #5f9ea0;
+  font-size: 2em;
 }
+
+/*presentacion*/
+.col {
+  margin: 2rem 1rem;
+}
+
+/*cursos*/
+.todos-los-cursos {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.todos-los-cursos .cursos {
+  width: 24%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  transition: transform 0.5s;
+}
+.todos-los-cursos .cursos:hover {
+  transform: scale(1.01);
+}
+
+/*wsp*/
+#wsp {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 100px;
+  transition: transform 0.5s;
+  z-index: 1;
+}
+#wsp:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  width: 50%;
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 10px;
+  float: left;
+  width: 50%;
+  height: 80px;
+}
+.card .card-title {
+  color: green;
+}
+
+/*footer*/
+footer {
+  background-color: #5f9ea0;
+}
+
+/*mapa*/
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/*formulario*/
+form label {
+  margin: 20px 20px;
+}
+
+form select {
+  margin: 10px 20px;
+}
+form select:focus {
+  background-color: #bdecb6;
+}
+
+form input {
+  border: 0px;
+  padding: 9px;
+}
+form input:focus {
+  background-color: #bdecb6;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

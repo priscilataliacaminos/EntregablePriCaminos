@@ -1,0 +1,25 @@
+//Variables
+$color-focus:  #bdecb6;
+
+/*formulario*/
+form label{
+    margin: 20px 20px;
+}
+
+form select{
+    margin: 10px 20px;
+    &:focus{
+        background-color: $color-focus;
+    }
+}
+
+
+form input{
+    border: 0px;
+    padding: 9px;
+    &:focus{
+        background-color: $color-focus;   
+    }
+}
+
+
