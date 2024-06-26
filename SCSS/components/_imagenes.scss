@@ -1,6 +1,12 @@
 /*presentacion*/
 .col{
     margin: 2rem 1rem;
+    img{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+    transform: rotate(-5deg);
+    }
 }
 
 /*cursos*/
@@ -13,7 +19,10 @@
         margin-bottom: 4px;
         transition: transform 0.5s;
         &:hover{
-            transform: scale(1.01);
+            transform: scale(1.05);
+            box-shadow: 11px 9px 5px 0px rgba(0,0,0,0.18);
+-webkit-box-shadow: 11px 9px 5px 0px rgba(0,0,0,0.18);
+-moz-box-shadow: 11px 9px 5px 0px rgba(0,0,0,0.18);
         }
     }
     

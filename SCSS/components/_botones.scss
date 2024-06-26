@@ -1,9 +1,25 @@
-.boton{
+.info{
     display: flex;
     justify-content: center;
     align-items: center;
-    a{
+
+}
+button{
+    padding: 1em 5em;
+    margin-bottom: 2em;
+    background-color: rgb(133, 228, 133);
+    border-radius: 15px;
+    transition: transform 0.5s;
+     a{
         text-decoration: none;
-        color: white;
+        color: black
+    }
+    &:hover{
+        transform: scale(1.06);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
     }
 }
+
+        

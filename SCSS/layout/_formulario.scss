@@ -2,24 +2,30 @@
 $color-focus:  #bdecb6;
 
 /*formulario*/
-form label{
-    margin: 20px 20px;
-}
-
-form select{
-    margin: 10px 20px;
-    &:focus{
-        background-color: $color-focus;
+form{
+    justify-content: center;
+    label{
+        font-size: large;
+        padding-left: 20%;
+        padding-right: 1%;
+        padding-top: 10%;
     }
-}
-
-
-form input{
-    border: 0px;
-    padding: 9px;
-    &:focus{
-        background-color: $color-focus;   
+    select{
+        margin: 10px 20px;
     }
-}
+    &:focus{
+            background-color: $color-focus;
+    }
+    input{
+            border: 0px;
+            padding: 9px;
+     &:focus{
+                background-color: $color-focus;   
+            }
+    }
+         
+}              
 
 
+
+        

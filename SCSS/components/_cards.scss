@@ -5,8 +5,23 @@
     padding: 10px;
     float: left;
     width: 50%;
-    height: 80px;
+    height: 25%;
+    margin: 20px;
+    transition: transform 0.5s;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+    &:hover{
+        transform: scale(1.1);
+    }
     .card-title{
-        color: green;
+        color: white;
+
+    }
+    button{
+        background-color: rgb(223, 223, 189);
+        padding: 1em;
+        border: 1px solid grey;
+        border-radius: 15px;
     }
 }
